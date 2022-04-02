@@ -29,6 +29,15 @@ html {
     background-color: black;
     display: flex;
     justify-content: center;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        background-color: #ffffff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: black;
+    }
 }
 
 body {
@@ -947,11 +956,12 @@ body {
         &_mobile {
             display: flex;
             align-items: center;
+
             &_mob {
                 &:hover {
                     opacity: 0.5;
                 }
-            }           
+            }
         }
 
         &_icons {
