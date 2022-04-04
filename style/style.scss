@@ -45,7 +45,6 @@ body {
 }
 
 /* Стили header */
-
 .header {
     width: 100%;
     padding-top: 4vh;
@@ -117,6 +116,7 @@ body {
     }
 }
 
+/* Стили Menu */
 .menu {
     background-color: black;
     height: 64vh;
@@ -876,6 +876,7 @@ body {
 
 }
 
+/* Cтили секции 10 */
 .info {
     display: flex;
     flex-direction: column;
@@ -973,6 +974,7 @@ body {
     }
 }
 
+/* Cтили секции 11 */
 .reviews {
 
     &_title {
@@ -1048,6 +1050,7 @@ body {
     }
 }
 
+/* Cтили секции 12 */
 .question {
     padding-bottom: 35vh;
     height: 70vh;
@@ -1097,11 +1100,13 @@ body {
     }
 }
 
+/* Cтили секции 13 */
 .map {
     width: 100%;
     height: 50vh;
 }
 
+/* Cтили футера */
 .footer {
     &_link {
         display: flex;
@@ -1270,6 +1275,7 @@ body {
     }
 }
 
+/* Стили мобильной версии */
 @media (max-width: 701px) {
 
     body {
@@ -1662,6 +1668,7 @@ body {
     }
 }
 
+/* Стили мобильной версии */
 @media (max-width: 601px) {
     .text {
         height: 75vh;

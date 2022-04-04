@@ -128,6 +128,7 @@ body {
   font-weight: bold;
 }
 
+/* Стили Menu */
 .menu {
   background-color: black;
   height: 64vh;
@@ -1067,6 +1068,7 @@ body {
   height: 25vh !important;
 }
 
+/* Cтили секции 10 */
 .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1209,6 +1211,7 @@ body {
   opacity: 0.5;
 }
 
+/* Cтили секции 11 */
 .reviews_title {
   font-family: Code Pro;
   font-weight: 400;
@@ -1303,6 +1306,7 @@ body {
   font-style: italic;
 }
 
+/* Cтили секции 12 */
 .question {
   padding-bottom: 35vh;
   height: 70vh;
@@ -1357,11 +1361,13 @@ body {
   padding: 3%;
 }
 
+/* Cтили секции 13 */
 .map {
   width: 100%;
   height: 50vh;
 }
 
+/* Cтили футера */
 .footer_link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1578,6 +1584,7 @@ body {
   margin-left: 2vw;
 }
 
+/* Стили мобильной версии */
 @media (max-width: 701px) {
   body {
     width: 90%;
@@ -1889,6 +1896,7 @@ body {
   }
 }
 
+/* Стили мобильной версии */
 @media (max-width: 601px) {
   .text {
     height: 75vh;
