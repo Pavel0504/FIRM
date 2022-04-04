@@ -103,6 +103,10 @@ body {
   text-decoration: none;
 }
 
+.header_bottom_left_link_look:hover {
+  font-weight: bold;
+}
+
 .header_bottom_left_link:hover {
   font-weight: bold;
 }
@@ -122,6 +126,10 @@ body {
 
 .header_bottom_right_link_firm {
   text-decoration: none;
+}
+
+.header_bottom_right_link_firm:hover {
+  font-weight: bold;
 }
 
 .header_bottom_right_link:hover {
@@ -801,6 +809,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.masters_list_left_name_text {
+  text-decoration: none;
 }
 
 .masters_list_left_name_text_span {

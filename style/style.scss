@@ -87,6 +87,10 @@ body {
 
                 &_look {
                     text-decoration: none;
+
+                    &:hover {
+                        font-weight: bold;
+                    }
                 }
 
                 &:hover {
@@ -106,6 +110,10 @@ body {
 
                 &_firm {
                     text-decoration: none;
+
+                    &:hover {
+                        font-weight: bold;
+                    }
                 }
 
                 &:hover {
@@ -634,6 +642,8 @@ body {
                 align-items: center;
 
                 &_text {
+                    text-decoration: none;
+
                     &_span {
                         visibility: hidden;
                         position: absolute;
