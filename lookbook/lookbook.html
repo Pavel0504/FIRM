@@ -14,7 +14,23 @@
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com /ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"
+      integrity="sha512-m/n857VfrPYUcRvzCfqfrC9aMT06TQA2V0DcX/Ovovrhswa3038FfYmHlB0l/ZMukVyKWmiwZI4Pnnd7v3FwFQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"
+      integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"></script>
+
     <title>LOOKBOOK</title>
   </head>
   <body>
@@ -27,7 +43,7 @@
           src="/assets/main/header/LOGO.svg"
           alt="Логотип"
         />
-        <a class="header_top_link" href="/master/mastereng.html">EN</a>
+        <a class="header_top_link" href="/lookbook/lookbookeng.html">EN</a>
       </div>
       <hr class="header_hr" />
       <div class="header_bottom">
@@ -35,11 +51,11 @@
           <a class="header_bottom_left_link" href="/about us/aboutrus.html"
             >О НАС</a
           >
-          <a class="header_bottom_left_link_look" href="">LOOKBOOK</a>
+          <a class="header_bottom_left_link_look" href="/lookbook/lookbook.html">LOOKBOOK</a>
         </div>
         <div class="header_bottom_right">
-          <a class="header_bottom_right_link_firm" href="">FIRM STORE</a>
-          <a class="header_bottom_right_link" href="">ЗАПИСЬ</a>
+          <a class="header_bottom_right_link_firm" href="#">FIRM STORE</a>
+          <a class="header_bottom_right_link" href="#">ЗАПИСЬ</a>
         </div>
       </div>
     </header>
@@ -98,7 +114,7 @@
           <div class="menu_main_left_big">
             <div class="menu_main_left_big_left">
               <p class="menu_main_left_big_left_number">03</p>
-              <a class="menu_main_left_big_left_title">КОНТАКТЫ</a>
+              <a class="menu_main_left_big_left_title" href="/contacts/contacts.html">КОНТАКТЫ</a>
             </div>
             <div class="menu_main_left_big_arrows">
               <img
@@ -174,7 +190,7 @@
       </div>
     </section>
     <section class="slider">
-      <div class="slider_item">
+      <div class="slider_item a slider1">
         <div class="slider_item_block">
           <div class="slider_item_block_container">
             <img
@@ -190,7 +206,7 @@
           </div>
         </div>
       </div>
-      <div class="slider_item">
+      <div class="slider_item b slider2">
         <div class="slider_item_block">
           <div class="slider_item_block_container">
             <img
@@ -206,7 +222,7 @@
           </div>
         </div>
       </div>
-      <div class="slider_item">
+      <div class="slider_item c slider3">
         <div class="slider_item_block">
           <div class="slider_item_block_container">
             <img
@@ -222,7 +238,7 @@
           </div>
         </div>
       </div>
-      <div class="slider_item">
+      <div class="slider_item d slider4">
         <div class="slider_item_block">
           <div class="slider_item_block_container">
             <img
@@ -238,18 +254,23 @@
           </div>
         </div>
       </div>
+      <script defer>
+        if (window.screen.width > 701) {
+          document.write('<script src="/js/scroll.js"><\/script>');
+        }
+      </script>
     </section>
     <section class="map" id="map"></section>
     <!-- Footer  () -->
     <footer class="footer">
       <div class="footer_link">
-        <a href="" class="footer_link_item">ЗАПИСЬ</a>
-        <a href="" class="footer_link_item">LOOKBOOK</a>
-        <a href="" class="footer_link_item">УСЛУГИ</a>
-        <a href="" class="footer_link_item">МАСТЕРА</a>
-        <a href="" class="footer_link_item">ПАРИКМАХЕРСКАЯ</a>
-        <a href="" class="footer_link_item">БЛОГ</a>
-        <a href="" class="footer_link_item">КОНТКАТЫ</a>
+        <a href="#" class="footer_link_item">ЗАПИСЬ</a>
+        <a href="/lookbook/lookbook.html" class="footer_link_item">LOOKBOOK</a>
+        <a href="/services/services.html" class="footer_link_item">УСЛУГИ</a>
+        <a href="/masters/masters.html" class="footer_link_item">МАСТЕРА</a>
+        <a href="#" class="footer_link_item">ПАРИКМАХЕРСКАЯ</a>
+        <a href="/blog/blog.html" class="footer_link_item">БЛОГ</a>
+        <a href="/contacts/contacts.html" class="footer_link_item">КОНТКАТЫ</a>
       </div>
       <hr class="footer_hr" />
       <div class="footer_adress">
@@ -379,7 +400,7 @@
       </div>
       <hr class="footer_hr" />
       <div class="footer_social">
-        <p class="footer_social_reserved">(c) Аll rights are reserved</p>
+        <p class="footer_social_reserved">(c) Все парва защищены</p>
         <div class="footer_social_icons">
           <a href="https://vk.com/firmmoscow"
             ><img
@@ -428,6 +449,10 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOvQ_hXj9YAZT2eJBmP5n4bnkuwrbHud4&callback=initMap"
+      async
+    ></script>
     <script src="/js/menu.js"></script>
     <script src="/js/carouselFooter.js"></script>
     <script src="/js/map.js"></script>

@@ -29,6 +29,7 @@ html {
     background-color: black;
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
 
     &::-webkit-scrollbar {
         width: 10px;
@@ -303,47 +304,49 @@ body {
 }
 
 .slider {
+    width: 100%;
+    height: 45vh;
+    position: relative;
     display: flex;
-    flex-direction: row;
-    overflow-x: hidden;
+    align-items: center;
 
-    &_wrap {
-        &_item {
+    &_item {
+        position: absolute;
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        height: 45vh;
+        width: 65%;
+        justify-content: space-between;
+        scroll-snap-align: center;
+
+        &_block {
             display: flex;
-            flex-direction: column;
-            height: 45vh;
-            justify-content: space-between;
-            padding-bottom: 30vh;
-            padding-top: 20vh;
+            height: 30vh;
+            justify-content: center;
 
-            &_block {
-                display: flex;
-                height: 30vh;
-                justify-content: center;
+            &_container {
+                &_line {
+                    width: inherit;
+                    height: 7vh;
+                    background-color: black;
+                    bottom: 27%;
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
 
-                &_container {
-                    &_line {
-                        width: inherit;
-                        height: 7vh;
-                        background-color: black;
-                        bottom: 27%;
-                        position: relative;
+                    &_right {
                         display: flex;
-                        justify-content: space-between;
+                        flex-direction: row;
                         align-items: center;
 
-                        &_right {
-                            display: flex;
-                            flex-direction: row;
-                            align-items: center;
+                        &_text {
+                            padding-right: 2vw;
+                        }
 
-                            &_text {
-                                padding-right: 2vw;
-                            }
-
-                            &_arrow:hover {
-                                opacity: 0.5;
-                            }
+                        &_arrow:hover {
+                            opacity: 0.5;
                         }
                     }
                 }
@@ -351,6 +354,15 @@ body {
         }
     }
 }
+
+.slider .c {
+    left: 100%;
+}
+
+.slider .d {
+    left: 200%;
+}
+
 
 .map {
     width: 100%;
@@ -616,12 +628,14 @@ body {
     .top {
         flex-direction: column;
         padding-top: 10vh;
-        height: 75vh;
+        height: 88vh;
 
         &_right {
 
             &_info {
                 line-height: 1.5;
+                height: 35vh;
+                margin-top: 5vh;
             }
 
             &_title {
@@ -640,6 +654,36 @@ body {
             font-weight: 300;
             font-size: 10vw;
         }
+    }
+
+    .slider {
+        flex-direction: column;
+        height: 90vh;
+
+        &_item {
+            position: relative;
+            width: 100%;
+
+            &_block {
+                &_container {
+                    &_img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .slider .b {
+        left: 0;
+    }
+
+    .slider .c {
+        left: 0;
+    }
+
+    .slider .d {
+        display: none;
     }
 
     .footer {

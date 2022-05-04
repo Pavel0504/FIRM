@@ -403,6 +403,7 @@ body {
 
 .masters_list_left_name_text {
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .masters_list_left_name_text_span {
@@ -446,6 +447,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.masters_list_right_name_text {
+  text-transform: uppercase;
 }
 
 .masters_list_right_name_text_span {

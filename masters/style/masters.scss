@@ -327,6 +327,7 @@ body {
 
                 &_text {
                     text-decoration: none;
+                    text-transform: uppercase;
 
                     &_span {
                         visibility: hidden;
@@ -373,6 +374,8 @@ body {
                 align-items: center;
 
                 &_text {
+                    text-transform: uppercase;
+
                     &_span {
                         visibility: hidden;
                         position: absolute;

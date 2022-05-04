@@ -514,6 +514,10 @@ body {
   opacity: 0.5;
 }
 
+.card-left_firm_block_container_line_left {
+  text-decoration: none;
+}
+
 .card-right {
   display: -webkit-box;
   display: -ms-flexbox;
